@@ -47,7 +47,7 @@ ion-select {
   --padding-end: 15px;
   --padding-top: 10px;
   background: linear-gradient(0.06deg, #2e3138 0.35%, #3d4148 192.77%);
-  font-family: Lato, sans-serif;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -87,7 +87,7 @@ ion-select {
   margin: 0 20px;
 }
 .detailEvent ion-col h3 {
-  font-family: Lato, sans-serif;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -97,7 +97,7 @@ ion-select {
 }
 
 .detailEvent ion-col p {
-  font-family: Lato, sans-serif;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -109,7 +109,7 @@ ion-select {
   align-self: flex-end;
 }
 .detailEvent .dateCol p {
-  font-family: Lato, sans-serif;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -147,7 +147,7 @@ hr {
   color: var(--ion-color-grey);
 }
 .peopleDetail ion-label {
-  font-family: Lato;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -162,7 +162,7 @@ hr {
 }
 .descriptionEvent p {
   height: 18px;
-  font-family: Lato;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: 300;
   font-size: 17px;
@@ -173,7 +173,6 @@ hr {
 }
 
 .descriptionEvent p span {
-  font-style: bold;
   font-weight: 500;
   font-size: 19px;
   color: var(--ion-color-white);
@@ -214,7 +213,7 @@ ion-card-header {
   padding-top: 7px;
 }
 ion-card-title {
-  font-family: Lato;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -224,7 +223,7 @@ ion-card-title {
 
 }
 ion-card-content {
-  font-family: Lato;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: normal;
   font-size: 10px;

@@ -1,11 +1,7 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row detail class="ion-justify-content-center m" lines="none">
-      <ion-select
-        placeholder="Select city"
-        [interfaceOptions]="customAlertOptions"
-        interface="popover"
-      >
+      <ion-select placeholder="Select city" interface="popover">
         <ion-select-option value="city">Select city</ion-select-option>
       </ion-select>
     </ion-row>
@@ -15,12 +11,12 @@
       </ion-row>
       <ion-row class="buttonActions">
         <ion-col size="3">
-          <ion-button
-            class="buttonAction buttonActionLeft"
-            expand="full"
-            fill="clear"
-            size="large"
-            >GUEST LIST
+          <ion-button [routerLink]="['/confirmation']"
+                      class="buttonAction buttonActionLeft"
+                      expand="full"
+                      fill="clear"
+                      size="large"
+          >GUEST LIST
           </ion-button>
         </ion-col>
         <ion-col size="3">
@@ -29,7 +25,7 @@
             expand="full"
             fill="clear"
             size="large"
-            >VIP TABLE
+          >VIP TABLE
           </ion-button>
         </ion-col>
         <ion-col size="3">
@@ -38,7 +34,7 @@
             expand="full"
             fill="clear"
             size="large"
-            >BUY TICKET
+          >BUY TICKET
           </ion-button>
         </ion-col>
       </ion-row>
@@ -53,7 +49,7 @@
           </ion-col>
         </ion-row>
         <ion-row class="hr">
-          <hr />
+          <hr/>
         </ion-row>
         <ion-row class="peopleRow">
           <ion-col
@@ -73,7 +69,7 @@
         <ion-slide>
           <ion-card>
             <div>
-              <img src="../../assets/img/cover1.jfif" />
+              <img src="../../assets/img/cover1.jfif"/>
             </div>
             <ion-card-header>
               <ion-card-title>Event 1</ion-card-title>
@@ -84,7 +80,7 @@
         <ion-slide>
           <ion-card>
             <div>
-              <img src="../../assets/img/cover2.jfif" />
+              <img src="../../assets/img/cover2.jfif"/>
             </div>
             <ion-card-header>
               <ion-card-title>Event 2</ion-card-title>
@@ -95,7 +91,7 @@
         <ion-slide>
           <ion-card>
             <div>
-              <img src="../../assets/img/cover3.jfif" />
+              <img src="../../assets/img/cover3.jfif"/>
             </div>
             <ion-card-header>
               <ion-card-title>Event 1</ion-card-title>
@@ -106,7 +102,7 @@
         <ion-slide>
           <ion-card>
             <div>
-              <img src="../../assets/img/cover4.jfif" />
+              <img src="../../assets/img/cover4.jfif"/>
             </div>
             <ion-card-header>
               <ion-card-title>Event 1</ion-card-title>
