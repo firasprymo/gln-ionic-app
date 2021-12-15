@@ -1,21 +1,16 @@
 <ion-content [fullscreen]="true">
-
   <ion-grid>
     <ion-row detail class="ion-justify-content-center m" lines="none">
-      <ion-select placeholder="Select city">
-
-        <ion-select-option value="germany">
-          germany
+      <ion-select placeholder="Select city" interface="popover">
+        <ion-select-option value="city">
+          <ion-icon name="germany"></ion-icon>
+Barcelona
         </ion-select-option>
-        <ion-select-option value="germany">
-          bercelone
-        </ion-select-option>
-
       </ion-select>
     </ion-row>
     <ion-row class="detailEventGroup">
       <ion-row class="cover">
-          <div class="image"></div>
+        <div class="image"></div>
       </ion-row>
       <ion-row class="buttonActions">
         <ion-col size="4">
@@ -37,16 +32,15 @@
           </ion-button>
         </ion-col>
         <ion-col size="4">
-          <ion-button [routerLink]="['/disabled-event']"
-                      class="buttonAction buttonActionRight"
-                      expand="full"
-                      fill="clear"
-                      size="large"
+          <ion-button
+            class="buttonAction buttonActionRight"
+            expand="full"
+            fill="clear"
+            size="large"
           >BUY TICKET
           </ion-button>
         </ion-col>
       </ion-row>
-
       <ion-row class="Event" [routerLink]="['/confirmation']">
         <ion-row class="detailEvent">
           <ion-col size="8">
