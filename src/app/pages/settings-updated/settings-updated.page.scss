@@ -1,0 +1,252 @@
+.GroupeIcon {
+  margin: 50px auto;
+  justify-content: space-between;
+}
+
+.questionButtons,
+.closeButtons {
+  background: linear-gradient(
+      318.21deg, #2C3036 14.05%, #31343C 85.29%);
+  box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
+  border-radius: 15px;
+  width: 56px;
+  justify-content: center;
+  height: 56px;
+}
+
+.questionButtons {
+  margin: 0 0 0 30px;
+}
+
+.questionButtons ion-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--ion-color-grey);
+}
+
+
+.closeButtons {
+  margin: 0 30px 0 0;
+}
+
+.closeButtons ion-icon {
+  width: 20px;
+  height: 20px;
+  //color: var(--ion-color-grey);
+}
+
+ion-title {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--ion-color-white);
+}
+
+.rowFirstLast {
+  margin: 30px auto 0 auto;
+  width: 350px;
+}
+
+.rowFirstLast ion-col {
+  width: 170px !important;
+}
+
+.rowEmail {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.rowEmail ion-col {
+  width: 340px !important;
+}
+
+.rowFirstLast ion-col,
+.rowEmail ion-col {
+  margin: 5px;
+  max-width: unset;
+  flex: 1 !important;
+}
+
+.rowFirstLast ion-input,
+.rowEmail ion-input,
+.rowEmail ion-select {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--ion-color-white);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.rowEmail ion-select::part(text) {
+  color: var(--ion-color-white);
+}
+.rowFirstLast ion-col,
+.rowEmail ion-col {
+  height: 50px;
+  background: rgba(34, 37, 42, 0.2);
+  border: 0.2px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 15px;
+
+}
+
+.rowFirstLast ion-input,
+.rowEmail ion-input,
+.rowEmail ion-label,
+.rowEmail ion-checkbox,
+.rowEmail ion-select {
+
+  --padding-start: 16px;
+}
+
+.rowEmail ion-select::part(placeholder) {
+  text-align: left;
+  padding: 0;
+}
+
+ion-select::part(placeholder) {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--ion-color-grey);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.rowGender {
+  margin: 20px auto 8px auto;
+}
+
+.rowAutomatic {
+  margin: 0 auto 20px auto;
+
+}
+
+.rowAutomatic,
+.rowGender {
+  width: 343px;
+  height: 80px;
+  background: linear-gradient(
+      0.06deg, #2E3138 0.35%, #3D4148 192.77%);
+  box-shadow: 3.88889px 3.88889px 16.6667px #1f2427;
+  border-radius: 15px;
+  //margin: 5px;
+
+}
+
+.rowGender ion-col,
+.rowAutomatic ion-col {
+  align-items: center;
+  display: flex;
+}
+
+.rowAutomatic .colCheckbox {
+  justify-content: end;
+
+}
+
+.rowAutomatic .colCheckbox ion-checkbox {
+  margin-right: 21px;
+  --background-checked: var(--ion-color-pink);
+  --border-color-checked: var(--ion-color-pink);
+
+}
+
+.rowGender ion-col ion-label,
+.rowAutomatic ion-col ion-label {
+  padding-left: 16px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.genderButtonF,
+.genderButtonM {
+  width: 110px;
+  height: 38px;
+  font-family: var(--font-primary);
+  --background: transparent;
+  opacity: 0.5;
+  border: 0.5px solid #7F8489;
+  box-sizing: border-box;
+}
+
+.genderButtonF {
+
+  border-radius: 5px 0 0 5px;
+}
+
+.genderButtonM {
+  border-radius: 0 5px 5px 0;
+}
+
+.genderButtonF:active,
+.genderButtonF:focus,
+.genderButtonF:hover,
+.genderButtonF:after,
+.selected,
+.genderButtonM:active,
+.genderButtonM:focus,
+.genderButtonM:hover,
+.genderButtonM:after,
+{
+  background: #AE00FF;
+  opacity: 1;
+}
+
+.iconCamera {
+  position: absolute;
+  border: 0.3px solid #2B2E35;
+  margin: 0px -10px 0px 316px;
+  right: 17px;
+  bottom: 17px;
+  top: 17px;
+}
+
+.versionRow {
+  width: 150px;
+  height: 36px;
+  margin: 58px auto;
+
+}
+
+.versionRow ion-col {
+  text-align: center;
+}
+
+.versionRow ion-label:nth-child(1) {
+  width: 50px;
+  height: 17px;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--ion-color-white);
+}
+
+.versionRow ion-label:nth-child(3) {
+  width: 120px;
+  height: 14px;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: var(--ion-color-grey);
+  mix-blend-mode: normal;
+}

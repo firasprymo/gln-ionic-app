@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,68 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-header,
+.toolbar-container,
+ion-toolbar {
+  height: 150px;
+  min-height: 150px;
+
+}
+.flag.flag-24 {
+
+  background-image: url('assets/icon/custom-menu.svg');
+
+}
+ion-content,
+ion-toolbar {
+  --ion-background-color: var(--ion-color-black);
+}
+
+.header-md::after {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 151px;
+  opacity: 0.03;
+  border: 0.5px solid var(--ion-color-white);
+}
+
+/* Set the placeholder color and opacity */
+
+ion-select::part(placeholder) {
+  color: var(--ion-color-white);
+  opacity: 1;
+  padding: 15px 20px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* Set the text color */
+ion-select::part(text) {
+  color: #545ca7;
+}
+
+/* Set the icon color and opacity */
+ion-select::part(icon) {
+  color: var(--ion-color-white);
+  opacity: 1;
+}
+
+.popover-content.sc-ion-popover-md {
+  width: 13em;
+  margin-top: 0.5em;
+}
+
+.swiper-wrapper {
+  height: unset;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ae00ff;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+}

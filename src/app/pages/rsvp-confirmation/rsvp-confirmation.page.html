@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="arrowBack" slot="start" [routerLink]="['/home']">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>Confirmation</ion-title>
+    <ion-buttons slot="end" [routerLink]="['/event-details']">
+      <ion-button>Details</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="detailEventGroup">
+      <ion-row class="cover ion-justify-content-center">
+        <div class="image"></div>
+        <p>LP</p>
+        <div class="descriptionProfile">Love + Propoganda</div>
+
+      </ion-row>
+      <ion-row class="Event">
+        <ion-row class="detailEvent">
+          <h3>Exocita</h3>
+          <p>Free Addmission open before 1:00 pm with RSVP.</p>
+        </ion-row>
+        <ion-row class="hr">
+          <hr/>
+        </ion-row>
+        <ion-row class="peopleRow">
+          <ion-col
+            size="6"
+            class="peopleDetailLeft ion-justify-content-center "
+          >
+            <ion-label>Geust</ion-label>
+          </ion-col>
+          <ion-col
+            size="6"
+            class="peopleDetailRight ion-justify-content-center ion-text-end"
+          >
+            <ion-label>John smith</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="peopleRow">
+          <ion-col
+            size="6"
+            class="peopleDetailLeft ion-justify-content-center "
+          >
+            <ion-label>Date</ion-label>
+          </ion-col>
+          <ion-col
+            size="6"
+            class="peopleDetailRight ion-justify-content-center ion-text-end"
+          >
+            <ion-label>29, Nov 2021</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="peopleRow">
+          <ion-col
+            size="6"
+            class="peopleDetailLeft ion-justify-content-center "
+          >
+            <ion-label>Address</ion-label>
+          </ion-col>
+          <ion-col
+            size="6"
+            class="peopleDetailRight ion-justify-content-center ion-text-end"
+          >
+            <ion-label>702 Cristal plaza, City</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-row>
+      <ion-row class="descriptionEvent">
+        <p>RSVP does not override venue door policy.</p>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+</ion-content>
