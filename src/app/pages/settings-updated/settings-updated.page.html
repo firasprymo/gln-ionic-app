@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="GroupeIcon">
+      <ion-button class="questionButtons" slot="start">
+        <ion-icon name="custom-menu"></ion-icon>
+      </ion-button>
+      <ion-title>Settings</ion-title>
+      <ion-button slot="end" class="closeButtons" icon-only (click)="confirm()">
+        <ion-icon name="custom-confirm" class="customClose"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="rowFirstLast ion-justify-content-evenly">
+      <ion-col size="6">
+        <ion-input placeholder="First name" value="John"></ion-input>
+      </ion-col>
+      <ion-col size="6">
+        <ion-input placeholder="Last name" value="Smith"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowEmail ion-justify-content-center">
+      <ion-col size="12">
+        <ion-input placeholder="Email" value="johnsmith@gmail.com"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowEmail ion-justify-content-center">
+      <ion-col size="12">
+        <ion-input placeholder="Mobile Number" value="+91 54823 66892"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowEmail ion-justify-content-center">
+      <ion-col size="12">
+        <ion-input type="date" placeholder="Birth Date" color="pink" value="25 Dec 1995"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowEmail ion-justify-content-center">
+      <ion-col size="12">
+
+        <ion-select placeholder="Select Home City" selectedText="Barcelona">
+          <ion-select-option value="Barcelona" selected>Barcelona</ion-select-option>
+        </ion-select>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowEmail ion-justify-content-center">
+      <ion-col size="12">
+        <ion-input placeholder="vaccination card"></ion-input>
+        <ion-icon class="iconCamera" name="custom-camera"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowGender ion-justify-content-center">
+      <ion-col size="4">
+        <ion-label>Gender</ion-label>
+      </ion-col>
+      <ion-col size="8">
+        <ion-button class="genderButtonF selected" value="Female" >Female</ion-button>
+        <ion-button class="genderButtonM" value="Male">Male</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rowAutomatic ion-justify-content-center">
+      <ion-col size="6">
+        <ion-label>Automatic Login</ion-label>
+      </ion-col>
+      <ion-col class="colCheckbox" size="6">
+        <ion-checkbox checked></ion-checkbox>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="versionRow">
+      <ion-col size="12">
+        <ion-label>v3.14.1</ion-label>
+        <br>
+        <ion-label>About geust list nation</ion-label>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

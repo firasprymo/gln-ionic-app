@@ -13,7 +13,7 @@
   height: 220px;
   background: var(--ion-color-black);
   opacity: 0.9;
-  border-radius: 15px;
+  border-radius: 15px 15px  0 0;
 }
 .rowCover .imageCover {
   background-color: var(--ion-color-pink);
@@ -24,7 +24,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../../../assets/img/78c00f32a293bde01481a7429502d876.jfif);
-  border-radius: 15px;
+  border-radius: 15px 15px  0 0;
 }
 
 .arrowBack ion-icon {

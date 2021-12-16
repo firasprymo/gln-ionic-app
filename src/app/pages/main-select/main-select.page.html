@@ -1,0 +1,119 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row detail class="ion-justify-content-center m" lines="none">
+      <ion-select placeholder="Select city" interface="popover" selectedText="Barcelona">
+        <ion-select-option value="city" >
+          <ion-icon name="germany" value="barcelona" ></ion-icon>
+          Barcelona
+        </ion-select-option>
+      </ion-select>
+    </ion-row>
+    <ion-row class="detailEventGroup">
+      <ion-row class="cover">
+        <div class="image"></div>
+      </ion-row>
+      <ion-row class="buttonActions">
+        <ion-col size="4">
+          <ion-button [routerLink]="['/rsvp-confirmation']"
+                      class="buttonAction buttonActionLeft"
+                      expand="full"
+                      fill="clear"
+                      size="large"
+          >GUEST LIST
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button
+            class="buttonAction buttonActionCenter"
+            expand="full"
+            fill="clear"
+            size="large"
+          >VIP TABLE
+          </ion-button>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button
+            class="buttonAction buttonActionRight"
+            expand="full"
+            fill="clear"
+            size="large"
+          >BUY TICKET
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="Event" [routerLink]="['/rsvp-confirmation']">
+        <ion-row class="detailEvent">
+          <ion-col size="8">
+            <h3>Exocita</h3>
+            <p>Love + Propoganda</p>
+          </ion-col>
+          <ion-col class="dateCol" size="4">
+            <p>29, Nov 2021</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="hr">
+          <hr/>
+        </ion-row>
+        <ion-row class="peopleRow">
+          <ion-col
+            size="12"
+            class="peopleDetail ion-justify-content-center ion-text-center"
+          >
+            <ion-icon name="people-outline"></ion-icon>
+            <ion-label>51 People are attending</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="descriptionEvent">
+          <p>Free Addmission open before <span>1:00</span> pm with RSVP.</p>
+        </ion-row>
+      </ion-row>
+      <!-- <ion-row class="listEvent"> -->
+      <ion-slides class="listEvent" pager="true" [options]="slideOpts">
+        <ion-slide>
+          <ion-card>
+            <div>
+              <img src="../../assets/img/cover1.jfif"/>
+            </div>
+            <ion-card-header>
+              <ion-card-title>Event 1</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Love + Propoganda</ion-card-content>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <div>
+              <img src="../../assets/img/cover2.jfif"/>
+            </div>
+            <ion-card-header>
+              <ion-card-title>Event 2</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Love + Propoganda</ion-card-content>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <div>
+              <img src="../../assets/img/cover3.jfif"/>
+            </div>
+            <ion-card-header>
+              <ion-card-title>Event 1</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Love + Propoganda</ion-card-content>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <ion-card>
+            <div>
+              <img src="../../assets/img/cover4.jfif"/>
+            </div>
+            <ion-card-header>
+              <ion-card-title>Event 1</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>Love + Propoganda</ion-card-content>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</ion-content>

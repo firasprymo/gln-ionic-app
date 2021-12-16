@@ -47,12 +47,17 @@ ion-title {
 }
 
 .rowFirstLast {
-  margin-top: 40px;
-  margin-bottom: 8px;
+  margin: 30px auto 0 auto;
+  width: 350px;
 }
 
 .rowFirstLast ion-col {
   width: 170px !important;
+}
+
+.rowEmail {
+  width: 350px;
+  margin: 0 auto;
 }
 
 .rowEmail ion-col {
@@ -69,12 +74,12 @@ ion-title {
 .rowFirstLast ion-input,
 .rowEmail ion-input,
 .rowEmail ion-select {
-  font-family: Lato, sans-serif;
+  font-family: var(--font-primary);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  color: var(--ion-color-grey);
+  line-height: 24px;
+  color: var(--ion-color-white);
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -114,20 +119,44 @@ ion-select::part(placeholder) {
   opacity: 0.8;
 }
 
+.rowGender {
+  margin: 20px auto 8px auto;
+}
+
 .rowAutomatic {
+  margin: 0 auto 20px auto;
+
+}
+
+.rowAutomatic,
+.rowGender {
+  width: 343px;
   height: 80px;
   background: linear-gradient(
       0.06deg, #2E3138 0.35%, #3D4148 192.77%);
   box-shadow: 3.88889px 3.88889px 16.6667px #1f2427;
   border-radius: 15px;
-  margin: 5px;
+  //margin: 5px;
 
 }
 
-.rowAutomatic ion-col  {
+.rowGender ion-col,
+.rowAutomatic ion-col {
   align-items: center;
   display: flex;
 }
+
+.rowAutomatic .colCheckbox {
+  justify-content: end;
+
+}
+
+.rowAutomatic .colCheckbox ion-checkbox {
+  margin-right: 21px;
+  --background-checked: var(--ion-color-pink)
+}
+
+.rowGender ion-col ion-label,
 .rowAutomatic ion-col ion-label {
   padding-left: 16px;
   font-family: Lato, sans-serif;
@@ -136,5 +165,82 @@ ion-select::part(placeholder) {
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.genderButtonF,
+.genderButtonM {
+  width: 110px;
+  height: 38px;
+  font-family: var(--font-primary);
+  --background: transparent;
+  opacity: 0.5;
+  border: 0.5px solid #7F8489;
+  box-sizing: border-box;
+}
+
+.genderButtonF {
+
+  border-radius: 5px 0 0 5px;
+}
+
+.genderButtonM {
+  border-radius: 0 5px 5px 0;
+}
+
+.genderButtonF:active,
+.genderButtonF:focus,
+.genderButtonF:hover,
+.genderButtonF:after,
+.genderButtonM:active,
+.genderButtonM:focus,
+.genderButtonM:hover,
+.genderButtonM:after {
+  background: #AE00FF;
+  opacity: 1;
+}
+
+.iconCamera {
+  position: absolute;
+  border: 0.3px solid #2B2E35;
+  margin: 0px -10px 0px 316px;
+  right: 17px;
+  bottom: 17px;
+  top: 17px;
+}
+
+.versionRow {
+  width: 150px;
+  height: 36px;
+  margin: 58px auto;
+
+}
+
+.versionRow ion-col {
+  text-align: center;
+}
+
+.versionRow ion-label:nth-child(1) {
+  width: 50px;
+  height: 17px;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--ion-color-white);
+}
+
+.versionRow ion-label:nth-child(3) {
+  width: 120px;
+  height: 14px;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: var(--ion-color-grey);
   mix-blend-mode: normal;
 }
