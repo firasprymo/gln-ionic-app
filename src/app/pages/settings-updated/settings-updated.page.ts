@@ -12,4 +12,11 @@ export class SettingsUpdatedPage implements OnInit {
   ngOnInit() {
   }
 
+  confirm() {
+
+  }
+
+  onCheck() {
+
+  }
 }

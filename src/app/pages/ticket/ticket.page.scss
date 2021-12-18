@@ -4,9 +4,9 @@
       318.21deg, #2C3036 14.05%, #31343C 85.29%);
   box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
   border-radius: 15px;
-  width: 56px;
+  width: 36px;
   justify-content: center;
-  height: 56px;
+  height: 36px;
 }
 
 .questionButtons {
@@ -48,8 +48,8 @@ ion-buttons ion-button {
   box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
   border-radius: 15px;
   justify-content: center;
-  width: 53px;
-  height: 56px;
+  width: 33px;
+  height: 36px;
 
   font-family: var(--font-primary);
   font-style: normal;
@@ -371,7 +371,7 @@ ion-icon .customClose {
 }
 
 .GroupeIcon {
-  margin: 50px auto;
+  margin: 30px auto;
   justify-content: space-between;
 }
 
