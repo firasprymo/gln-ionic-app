@@ -28,13 +28,16 @@
 ion-toolbar {
   height: 100px;
   min-height: 100px;
+  --min-height: 100px;
 
 }
+
 .flag.flag-24 {
 
   background-image: url('assets/icon/custom-menu.svg');
 
 }
+
 ion-content,
 ion-toolbar {
   --background: var(--ion-color-black);

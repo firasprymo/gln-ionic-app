@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {IonDatetime} from "@ionic/angular";
+import {format, parseISO} from 'date-fns';
 
 @Component({
   selector: 'gln-settings',
@@ -7,6 +9,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class SettingsPage implements OnInit {
   checked = false;
+  @ViewChild(IonDatetime, {static: true}) datetime: IonDatetime;
+  dateValue2 = '';
 
   constructor() {
   }
@@ -20,5 +24,13 @@ export class SettingsPage implements OnInit {
 
   onCheck() {
     this.checked = true;
+  }
+
+  formatDate(value: string) {
+    return format(parseISO(value), 'MMM dd yyyy');
+  }
+
+  segmentChanged(ev: any) {
+    console.log('Segment changed', ev);
   }
 }

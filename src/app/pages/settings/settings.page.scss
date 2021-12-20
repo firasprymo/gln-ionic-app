@@ -48,7 +48,7 @@ ion-title {
 
 .rowFirstLast {
   margin: 30px auto 0 auto;
-  width: 350px;
+  width: 400px;
 }
 
 .rowFirstLast ion-col {
@@ -56,8 +56,12 @@ ion-title {
 }
 
 .rowEmail {
-  width: 350px;
+  width: 400px;
   margin: 0 auto;
+}
+
+.colCalendar {
+  display: flex;
 }
 
 .rowEmail ion-col {
@@ -130,7 +134,7 @@ ion-select::part(placeholder) {
 
 .rowAutomatic,
 .rowGender {
-  width: 343px;
+  width: 392px;
   height: 80px;
   background: linear-gradient(
       0.06deg, #2E3138 0.35%, #3D4148 192.77%);
@@ -249,25 +253,15 @@ ion-checkbox {
   --background: transparent;
   --border: none;
   --border-style: none;
-  --checkmark-color:none;
+  --checkmark-color: none;
   --background-checked: unset !important;
 
 }
 
-.checkbox {
-  width: 53px;
-  height: 21px;
-  background: transparent url(../../../assets/icon/custom-in-check.svg) no-repeat 80% 50%
+ion-toggle {
+  --background-checked: var(--ion-color-pink);
 }
 
-.checkbox-checked {
-  width: 53px;
-  height: 21px;
-  background: transparent url(../../../assets/icon/custom-checkbox.svg) no-repeat 80% 50%
-}
-
-ion-checkbox[aria-checked="true"] + .checkbox {
-  width: 53px;
-  height: 21px;
-  background: transparent url(../../../assets/icon/custom-checkbox.svg) no-repeat 80% 50%
+.segment-button-checked {
+  --indicator-color: var(--ion-color-pink)
 }

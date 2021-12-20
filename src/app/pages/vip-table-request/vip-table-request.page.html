@@ -1,6 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>VIP Table Request</ion-title>
+    <ion-buttons class="GroupeIcon">
+      <ion-button class="questionButtons" slot="start">
+        <ion-icon name="custom-back"></ion-icon>
+      </ion-button>
+      <ion-title>VIP Table Request</ion-title>
+
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
@@ -26,13 +33,16 @@
       </ion-col>
     </ion-row>
     <ion-row class="rowGlobal ion-justify-content-center">
-      <ion-col size="12">
-        <ion-input type="date" placeholder="Date of reservation" color="pink"></ion-input>
+      <ion-col size="12" class="colCalendar ion-justify-content-between ">
+        <ion-datetime placeholder="Date of reservation"></ion-datetime>
+        <ion-button size="small" fill="clear">
+          <ion-icon slot="icon-only" name="custom-calendar"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
     <ion-row class="rowFooter ion-justify-content-center">
       <ion-col size="12">
-        <ion-button class="sendRequestBtn" color="black" type="button" placeholder="Date of reservation" >Send request
+        <ion-button class="sendRequestBtn" color="black" type="button" placeholder="Date of reservation">Send request
         </ion-button>
       </ion-col>
     </ion-row>

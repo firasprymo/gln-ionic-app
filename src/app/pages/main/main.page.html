@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
-    <ion-row detail class="ion-align-items-center ion-justify-content-center m" lines="none">
-      <ion-col size="6">
+    <ion-row detail class="ion-align-items-center ion-justify-content-center " lines="none">
+      <ion-col size="12" class="colCity">
         <ion-select placeholder="Select city">
           <ion-select-option value="germany">
             germany
@@ -11,7 +11,7 @@
           </ion-select-option>
         </ion-select>
       </ion-col>
-      <ion-col size="1" offset="3">
+      <ion-col size="12">
         <ion-button class="settings" icon-only [routerLink]="('/settings')">
           <ion-icon name="custom-settings"></ion-icon>
         </ion-button>
@@ -114,7 +114,7 @@
             <div>
               <img src="../../assets/img/cover4.jfif"/>
             </div>
-            <ion-card-header >
+            <ion-card-header>
               <ion-card-title class="ion-text-center">Event 1</ion-card-title>
             </ion-card-header>
             <ion-card-content>Love + Propoganda</ion-card-content>

@@ -1,6 +1,11 @@
+.colCity {
+  justify-content: center;
+  display: flex;
+  margin: 56px auto 0;
+}
 
 ion-select {
-  margin-top: 50px;
+  margin: 0 auto 0 auto;
   background: var(--ion-color-black);
   border-radius: 15px;
   width: 212px;
@@ -9,29 +14,46 @@ ion-select {
   -4px -4px 10px rgba(72, 78, 83, 0.6);
 }
 
+.colCity .settings {
+  margin: 0 0 0 auto;
+}
+
+.settings {
+  --background: linear-gradient(
+      318.21deg, #2C3036 14.05%, #31343C 85.29%);
+  box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
+  border-radius: 15px;
+  width: 40px;
+  justify-content: center;
+  font-size: 12px;
+  height: 40px;
+  margin: -108px 30px 0 0;
+
+}
+
 .cover {
   margin: 0 auto;
-  width: 370px;
-  height: 220px;
+  width: 300px;
+  height: 200px;
   background: var(--ion-color-black);
-  opacity: 0.9;
+  //opacity: 0.9;
   border-radius: 15px;
 }
 
 .cover .image {
   background-color: var(--ion-color-pink);
-  mix-blend-mode: color-dodge;
+  //mix-blend-mode: color-dodge;
   width: 100%;
   height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../../../assets/img/78c00f32a293bde01481a7429502d876.jfif);
+  background-image: url(../../../assets/img/cover.png);
   border-radius: 15px;
 }
 
 .buttonActions {
-  height: 48px;
+  height: 60px;
   margin: 3px 0 -5px 0;
   flex: 1 1 100%;
 }
@@ -44,6 +66,7 @@ ion-select {
 }
 
 .buttonAction {
+  height: 40px;
   --padding-bottom: 10px;
   --padding-start: 15px;
   --padding-end: 15px;
@@ -82,7 +105,7 @@ ion-select {
 }
 
 .detailEventGroup {
-  margin: 38px 30px 0 30px;
+  margin: 0px 15px 0 15px;
 }
 
 .detailEvent {
@@ -252,20 +275,7 @@ ion-card-content {
 }
 
 ion-slides {
-  height: 160px;
+  height: 180px;
 
 }
 
-
-
-.settings {
-  --background: linear-gradient(
-      318.21deg, #2C3036 14.05%, #31343C 85.29%);
-  box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
-  border-radius: 15px;
-  width: 40px;
-  justify-content: center;
-  font-size: 12px;
-  height: 40px;
-  margin: 49px 30px 0 0;
-}

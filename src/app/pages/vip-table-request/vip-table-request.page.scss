@@ -1,5 +1,9 @@
+.GroupeIcon {
+  margin: 30px auto;
+  justify-content: space-between;
+}
 ion-title {
-  margin: 37px auto;
+  margin: 0 auto;
   font-family: var(--font-primary);
   font-style: normal;
   font-weight: 500;
@@ -24,10 +28,14 @@ ion-title {
 }
 
 .rowGlobal {
-  margin: 0 auto;
-  width: 350px;
-}
 
+    width: 400px;
+    margin: 0 auto;
+
+}
+.colCalendar{
+  display: flex;
+}
 .rowGlobal ion-col {
   width: 340px !important;
 }

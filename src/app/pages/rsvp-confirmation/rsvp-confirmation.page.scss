@@ -1,5 +1,6 @@
+
 .arrowBack {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 20px;
   background: linear-gradient(
       318.21deg, #2C3036 14.05%, #31343C 85.29%);
   box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
@@ -16,7 +17,7 @@
 }
 
 ion-title {
-  margin: 37px auto;
+  margin: 0 auto;
   font-family: var(--font-primary);
   font-style: normal;
   font-weight: 500;
@@ -27,9 +28,27 @@ ion-title {
   color: var(--ion-color-white);
 }
 
-ion-buttons ion-button {
-  margin: 0 30px 0 0;
+.details ion-button {
+  margin: 0 20px 0 0;
   background: linear-gradient(
+      318.21deg, #2C3036 14.05%, #31343C 85.29%);
+  box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
+  border-radius: 15px;
+  justify-content: center;
+  width: 73px;
+  height: 36px;
+
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  --color: var(--ion-color-grey);
+}
+.arrowBack ion-button {
+  //margin: 0 30px 0 0;
+  background  : linear-gradient(
       318.21deg, #2C3036 14.05%, #31343C 85.29%);
   box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
   border-radius: 15px;
@@ -123,7 +142,7 @@ ion-buttons ion-button {
 }
 
 .detailEventGroup {
-  margin: 38px 30px 0 30px;
+  margin: 20px 10px 0 10px;
 }
 
 .detailEvent {
@@ -225,7 +244,6 @@ hr {
   padding: 0 30px;
 
 }
-
 
 
 .listEvent ion-card {
