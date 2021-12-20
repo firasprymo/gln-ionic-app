@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-buttons class="arrowBack" slot="start" [routerLink]="['/home']">
-      <ion-icon name="chevron-back-outline"></ion-icon>
+      <ion-button >
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>Confirmation</ion-title>
-    <ion-buttons slot="end" [routerLink]="['/event-details']">
+    <ion-buttons class="details" slot="end" [routerLink]="['/event-details']">
       <ion-button>Details</ion-button>
     </ion-buttons>
   </ion-toolbar>

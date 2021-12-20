@@ -1,6 +1,11 @@
+.colCity {
+  justify-content: center;
+  display: flex;
+  margin: 56px auto 0;
+}
 
 ion-select {
-  margin-top: 50px;
+  margin: 0 auto 0 auto;
   background: var(--ion-color-black);
   border-radius: 15px;
   width: 212px;
@@ -9,28 +14,46 @@ ion-select {
   -4px -4px 10px rgba(72, 78, 83, 0.6);
 }
 
+.colCity .settings {
+  margin: 0 0 0 auto;
+}
+
+.settings {
+  --background: linear-gradient(
+      318.21deg, #2C3036 14.05%, #31343C 85.29%);
+  box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
+  border-radius: 15px;
+  width: 40px;
+  justify-content: center;
+  font-size: 12px;
+  height: 40px;
+  margin: -108px 30px 0 0;
+
+}
+
 .cover {
-  width: 370px;
-  height: 220px;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
   background: var(--ion-color-black);
-  opacity: 0.9;
+  //opacity: 0.9;
   border-radius: 15px;
 }
 
 .cover .image {
   background-color: var(--ion-color-pink);
-  mix-blend-mode: color-dodge;
+  //mix-blend-mode: color-dodge;
   width: 100%;
   height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../../../assets/img/78c00f32a293bde01481a7429502d876.jfif);
+  background-image: url(../../../assets/img/cover.png);
   border-radius: 15px;
 }
 
 .buttonActions {
-  height: 48px;
+  height: 60px;
   margin: 3px 0 -5px 0;
   flex: 1 1 100%;
 }
@@ -43,6 +66,7 @@ ion-select {
 }
 
 .buttonAction {
+  height: 40px;
   --padding-bottom: 10px;
   --padding-start: 15px;
   --padding-end: 15px;
@@ -79,14 +103,17 @@ ion-select {
   box-shadow: 3.88889px 3.88889px 16.6667px #1f2427;
   border-radius: 15px;
 }
+
 .detailEventGroup {
-  margin: 38px 30px 0 30px;
+  margin: 0px 15px 0 15px;
 }
+
 .detailEvent {
   height: 100%;
   flex: 1 1 100%;
   margin: 0 20px;
 }
+
 .detailEvent ion-col h3 {
   font-family: var(--font-primary);
   font-style: normal;
@@ -106,9 +133,11 @@ ion-select {
   color: var(--ion-color-pink);
   margin-top: 0;
 }
+
 .detailEvent .dateCol {
   align-self: flex-end;
 }
+
 .detailEvent .dateCol p {
   font-family: var(--font-primary);
   font-style: normal;
@@ -125,6 +154,7 @@ ion-select {
   flex: 1 1 100%;
   margin: 0 20px 30px 20px;
 }
+
 hr {
   opacity: 0.06;
   border: 0.3px solid var(--ion-color-white);
@@ -132,11 +162,13 @@ hr {
   width: 100%;
   height: 0;
 }
+
 .peopleRow {
   height: 100%;
   flex: 1 1 100%;
   margin-bottom: 30px;
 }
+
 .peopleDetail {
   width: 100%;
   max-width: 100%;
@@ -144,9 +176,11 @@ hr {
   display: flex;
   grid-gap: 8px;
 }
+
 .peopleDetail ion-icon {
   color: var(--ion-color-grey);
 }
+
 .peopleDetail ion-label {
   font-family: var(--font-primary);
   font-style: normal;
@@ -155,12 +189,14 @@ hr {
   line-height: 18px;
   color: var(--ion-color-white);
 }
+
 .descriptionEvent {
   height: 114px;
   background: linear-gradient(0.06deg, #25272d 0.35%, #4c515d 192.77%);
   opacity: 0.5;
   border-radius: 15px;
 }
+
 .descriptionEvent p {
   height: 18px;
   font-family: var(--font-primary);
@@ -182,15 +218,14 @@ hr {
 .listEvent ion-card {
   margin: 0;
   padding: 0;
-  border-radius: 15px 15px 0px 0px;
   width: 123px;
-  height: 124px;
+  height: 50%;
   background: linear-gradient(0.06deg, #2e3138 0.35%, #3d4148 192.77%);
-  // box-shadow: 3.88889px 3.88889px 16.6667px #1f2427;
   border-radius: 15px;
 }
+
 .listEvent div {
-  width: 123px;
+  width: 153px;
   height: 72px;
   left: 29px;
   top: 745px;
@@ -198,21 +233,25 @@ hr {
   mix-blend-mode: color-dodge;
   border-radius: 15px 15px 0px 0px;
 }
+
 .listEvent div {
   width: 123px;
   height: 72px;
   border-radius: 15px 15px 0px 0px;
 }
+
 .listEvent div img {
   width: 100%;
   height: 100%;
   position: relative;
   display: block;
 }
+
 ion-card-header {
   padding-bottom: 0;
   padding-top: 7px;
 }
+
 ion-card-title {
   font-family: var(--font-primary);
   font-style: normal;
@@ -223,6 +262,7 @@ ion-card-title {
   text-align: left;
 
 }
+
 ion-card-content {
   font-family: var(--font-primary);
   font-style: normal;
@@ -233,11 +273,9 @@ ion-card-content {
 
   color: var(--ion-color-grey);
 }
-ion-slides{
-  height: 160px;
+
+ion-slides {
+  height: 180px;
 
 }
 
-ion-slide{
-  //flex: 1 1 0;
-}

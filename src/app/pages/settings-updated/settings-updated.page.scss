@@ -1,5 +1,5 @@
 .GroupeIcon {
-  margin: 50px auto;
+  margin: 30px auto;
   justify-content: space-between;
 }
 
@@ -9,9 +9,9 @@
       318.21deg, #2C3036 14.05%, #31343C 85.29%);
   box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
   border-radius: 15px;
-  width: 56px;
+  width: 36px;
   justify-content: center;
-  height: 56px;
+  height: 36px;
 }
 
 .questionButtons {
@@ -249,4 +249,31 @@ ion-select::part(placeholder) {
   text-align: right;
   color: var(--ion-color-grey);
   mix-blend-mode: normal;
+}
+
+ion-checkbox {
+  --background: transparent;
+  --border: none;
+  --border-style: none;
+  --checkmark-color:none;
+  --background-checked: unset !important;
+
+}
+
+.checkbox {
+  width: 53px;
+  height: 21px;
+  background: transparent url(../../../assets/icon/custom-checkbox.svg) no-repeat 80% 50%
+}
+
+.checkbox-checked {
+  width: 53px;
+  height: 21px;
+  background: transparent url(../../../assets/icon/custom-in-check.svg) no-repeat 80% 50%
+}
+
+ion-checkbox[aria-checked="true"] + .checkbox {
+  width: 53px;
+  height: 21px;
+  background: transparent url(../../../assets/icon/custom-in-check.svg) no-repeat 80% 50%
 }

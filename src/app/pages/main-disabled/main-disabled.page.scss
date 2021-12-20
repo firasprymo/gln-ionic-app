@@ -10,6 +10,7 @@ ion-select {
 }
 
 .cover {
+  margin: 0 auto;
   width: 370px;
   height: 220px;
   background: var(--ion-color-black);
@@ -182,9 +183,8 @@ hr {
 .listEvent ion-card {
   margin: 0;
   padding: 0;
-  border-radius: 15px 15px 0px 0px;
   width: 123px;
-  height: 124px;
+  height: 50%;
   background: linear-gradient(0.06deg, #2e3138 0.35%, #3d4148 192.77%);
   // box-shadow: 3.88889px 3.88889px 16.6667px #1f2427;
   border-radius: 15px;

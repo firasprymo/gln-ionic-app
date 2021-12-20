@@ -25,20 +25,23 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-ion-header,
-.toolbar-container,
 ion-toolbar {
-  height: 150px;
-  min-height: 150px;
+  height: 100px;
+  min-height: 100px;
+  --min-height: 100px;
 
 }
+
 .flag.flag-24 {
 
   background-image: url('assets/icon/custom-menu.svg');
 
 }
+
 ion-content,
 ion-toolbar {
+  --background: var(--ion-color-black);
+
   --ion-background-color: var(--ion-color-black);
 }
 
@@ -46,7 +49,7 @@ ion-toolbar {
   position: absolute;
   width: 100%;
   height: 0;
-  top: 151px;
+  top: 100px;
   opacity: 0.03;
   border: 0.5px solid var(--ion-color-white);
 }

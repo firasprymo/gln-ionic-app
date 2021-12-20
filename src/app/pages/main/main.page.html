@@ -1,23 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="end" [routerLink]="['/settings']">
-      <ion-button icon-only>
-        <ion-icon name="custom-settings"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
 <ion-content [fullscreen]="true">
   <ion-grid>
-    <ion-row detail class="ion-justify-content-center m" lines="none">
-      <ion-select placeholder="Select city">
-        <ion-select-option value="germany">
-          germany
-        </ion-select-option>
-        <ion-select-option value="germany">
-          bercelone
-        </ion-select-option>
-      </ion-select>
+    <ion-row detail class="ion-align-items-center ion-justify-content-center " lines="none">
+      <ion-col size="12" class="colCity">
+        <ion-select placeholder="Select city">
+          <ion-select-option value="germany">
+            germany
+          </ion-select-option>
+          <ion-select-option value="germany">
+            bercelone
+          </ion-select-option>
+        </ion-select>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="settings" icon-only [routerLink]="('/settings')">
+          <ion-icon name="custom-settings"></ion-icon>
+        </ion-button>
+      </ion-col>
     </ion-row>
     <ion-row class="detailEventGroup">
       <ion-row class="cover">
@@ -29,7 +27,7 @@
                       class="buttonAction buttonActionLeft"
                       expand="full"
                       fill="clear"
-                      size="large"          >GUEST LIST
+                      size="large">GUEST LIST
           </ion-button>
         </ion-col>
         <ion-col size="4">
@@ -46,7 +44,7 @@
                       class="buttonAction buttonActionRight"
                       expand="full"
                       fill="clear"
-                      size="large"          >BUY TICKET
+                      size="large">BUY TICKET
           </ion-button>
         </ion-col>
       </ion-row>
@@ -84,7 +82,7 @@
               <img src="../../assets/img/cover1.jfif"/>
             </div>
             <ion-card-header>
-              <ion-card-title>Event 1</ion-card-title>
+              <ion-card-title class="ion-text-center">Event 1</ion-card-title>
             </ion-card-header>
             <ion-card-content>Love + Propoganda</ion-card-content>
           </ion-card>
@@ -95,7 +93,7 @@
               <img src="../../assets/img/cover2.jfif"/>
             </div>
             <ion-card-header>
-              <ion-card-title>Event 2</ion-card-title>
+              <ion-card-title class="ion-text-center">Event 2</ion-card-title>
             </ion-card-header>
             <ion-card-content>Love + Propoganda</ion-card-content>
           </ion-card>
@@ -106,7 +104,7 @@
               <img src="../../assets/img/cover3.jfif"/>
             </div>
             <ion-card-header>
-              <ion-card-title>Event 1</ion-card-title>
+              <ion-card-title class="ion-text-center">Event 1</ion-card-title>
             </ion-card-header>
             <ion-card-content>Love + Propoganda</ion-card-content>
           </ion-card>
@@ -117,7 +115,7 @@
               <img src="../../assets/img/cover4.jfif"/>
             </div>
             <ion-card-header>
-              <ion-card-title>Event 1</ion-card-title>
+              <ion-card-title class="ion-text-center">Event 1</ion-card-title>
             </ion-card-header>
             <ion-card-content>Love + Propoganda</ion-card-content>
           </ion-card>

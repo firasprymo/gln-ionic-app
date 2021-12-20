@@ -1,5 +1,5 @@
 .GroupeIcon {
-  margin: 50px auto;
+  margin: 30px auto;
   justify-content: space-between;
 }
 
@@ -9,9 +9,9 @@
       318.21deg, #2C3036 14.05%, #31343C 85.29%);
   box-shadow: 4px 4px 11px rgb(31 36 39 / 80%), -1px -1px 5px 4px rgb(72 78 83 / 60%);
   border-radius: 15px;
-  width: 56px;
+  width: 36px;
   justify-content: center;
-  height: 56px;
+  height: 36px;
 }
 
 .questionButtons {
@@ -48,7 +48,7 @@ ion-title {
 
 .rowFirstLast {
   margin: 30px auto 0 auto;
-  width: 350px;
+  width: 400px;
 }
 
 .rowFirstLast ion-col {
@@ -56,8 +56,12 @@ ion-title {
 }
 
 .rowEmail {
-  width: 350px;
+  width: 400px;
   margin: 0 auto;
+}
+
+.colCalendar {
+  display: flex;
 }
 
 .rowEmail ion-col {
@@ -130,7 +134,7 @@ ion-select::part(placeholder) {
 
 .rowAutomatic,
 .rowGender {
-  width: 343px;
+  width: 392px;
   height: 80px;
   background: linear-gradient(
       0.06deg, #2E3138 0.35%, #3D4148 192.77%);
@@ -243,4 +247,21 @@ ion-select::part(placeholder) {
   text-align: right;
   color: var(--ion-color-grey);
   mix-blend-mode: normal;
+}
+
+ion-checkbox {
+  --background: transparent;
+  --border: none;
+  --border-style: none;
+  --checkmark-color: none;
+  --background-checked: unset !important;
+
+}
+
+ion-toggle {
+  --background-checked: var(--ion-color-pink);
+}
+
+.segment-button-checked {
+  --indicator-color: var(--ion-color-pink)
 }
